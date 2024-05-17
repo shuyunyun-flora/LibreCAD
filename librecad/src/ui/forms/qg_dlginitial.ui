@@ -150,22 +150,8 @@ Please choose the unit you want to use for new drawings and your preferred langu
   <tabstop>cbLanguageCmd</tabstop>
  </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>QG_DlgInitial</receiver>
-   <slot>ok()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>206</x>
-     <y>323</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>ok()</slot>
+ </slots>
 </ui>

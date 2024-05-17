@@ -200,86 +200,9 @@
  <resources>
   <include location="../../../res/extui/extui.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>leLabel</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>Ui_DimOptions</receiver>
-   <slot>updateLabel()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>bDiameter</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>Ui_DimOptions</receiver>
-   <slot>updateLabel()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>leTol1</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>Ui_DimOptions</receiver>
-   <slot>updateLabel()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>leTol2</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>Ui_DimOptions</receiver>
-   <slot>updateLabel()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbSymbol</sender>
-   <signal>activated(QString)</signal>
-   <receiver>Ui_DimOptions</receiver>
-   <slot>insertSign(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>updateLabel()</slot>
+  <slot>insertSign(QString)</slot>
+ </slots>
 </ui>

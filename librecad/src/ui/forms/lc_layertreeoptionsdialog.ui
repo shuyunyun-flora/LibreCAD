@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>491</width>
-    <height>268</height>
+    <width>626</width>
+    <height>303</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -576,136 +576,7 @@
  <resources>
   <include location="../../../res/ui/ui.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>validate()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pb_highlightedColor</sender>
-   <signal>clicked()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>pb_highlightedColorClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>468</x>
-     <y>381</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>254</x>
-     <y>251</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pb_gridColor</sender>
-   <signal>clicked()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>pb_gridColorClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>332</x>
-     <y>478</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>210</x>
-     <y>269</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pbSelectedItemsBgColor</sender>
-   <signal>clicked()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>pbSelectedItemsBgColorClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>332</x>
-     <y>478</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>210</x>
-     <y>269</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pbActiveLayerBgColor</sender>
-   <signal>clicked()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>pbActiveLayerBgColorClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>332</x>
-     <y>478</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>210</x>
-     <y>269</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pb_selectedItemColor</sender>
-   <signal>clicked()</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>pb_selectedItemColorClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>332</x>
-     <y>448</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>210</x>
-     <y>269</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbShowIdented</sender>
-   <signal>stateChanged(int)</signal>
-   <receiver>LC_LayerTreeOptionsDialog</receiver>
-   <slot>showIndentedClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>143</x>
-     <y>294</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>210</x>
-     <y>269</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>validate()</slot>
   <slot>pb_highlightedColorClicked()</slot>

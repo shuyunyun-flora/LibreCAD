@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>556</width>
-    <height>24</height>
+    <width>626</width>
+    <height>29</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -305,70 +305,11 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>bClose</sender>
-   <signal>clicked()</signal>
-   <receiver>Ui_LineOptionsRel</receiver>
-   <slot>closeLine()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>bUndo</sender>
-   <signal>clicked()</signal>
-   <receiver>Ui_LineOptionsRel</receiver>
-   <slot>undo()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>bRedo</sender>
-   <signal>clicked()</signal>
-   <receiver>Ui_LineOptionsRel</receiver>
-   <slot>redo()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>100</x>
-     <y>10</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>61</x>
-     <y>10</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>bPolyline</sender>
-   <signal>clicked()</signal>
-   <receiver>Ui_LineOptionsRel</receiver>
-   <slot>polyline()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>100</x>
-     <y>10</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>61</x>
-     <y>10</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>closeLine()</slot>
+  <slot>undo()</slot>
+  <slot>redo()</slot>
+  <slot>polyline()</slot>
+ </slots>
 </ui>

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>847</width>
+    <width>914</width>
     <height>646</height>
    </rect>
   </property>
@@ -1308,109 +1308,11 @@
   <tabstop>lePathHatch</tabstop>
  </tabstops>
  <resources>
+  <include location="../../../res/icons/icons.qrc"/>
+  <include location="../../../res/icons/icons.qrc"/>
   <include location="../../../res/ui/ui.qrc"/>
-  <include location="../../../res/icons/icons.qrc"/>
-  <include location="../../../res/icons/icons.qrc"/>
-  <include location="../../../res/icons/icons.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>QG_DlgOptionsGeneral</receiver>
-   <slot>ok()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>344</x>
-     <y>615</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>QG_DlgOptionsGeneral</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>344</x>
-     <y>615</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbLanguageCmd</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsGeneral</receiver>
-   <slot>setRestartNeeded()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>672</x>
-     <y>563</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbLanguage</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsGeneral</receiver>
-   <slot>setRestartNeeded()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>672</x>
-     <y>537</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btPathLibrary</sender>
-   <signal>clicked()</signal>
-   <receiver>QG_DlgOptionsGeneral</receiver>
-   <slot>setLibraryPath()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>682</x>
-     <y>193</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>322</x>
-     <y>201</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btTemplate</sender>
-   <signal>clicked()</signal>
-   <receiver>QG_DlgOptionsGeneral</receiver>
-   <slot>setTemplateFile()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>682</x>
-     <y>193</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>322</x>
-     <y>201</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>set_toolbar_file()</slot>
  </slots>

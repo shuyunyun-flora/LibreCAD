@@ -81,22 +81,8 @@
   <include location="local">rs_settings.h</include>
  </includes>
  <resources/>
- <connections>
-  <connection>
-   <sender>leDist</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>Ui_SnapDistOptions</receiver>
-   <slot>updateDist(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>updateDist(QString)</slot>
+ </slots>
 </ui>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>220</width>
-    <height>124</height>
+    <height>137</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -23,7 +23,7 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="margin" stdset="0">
     <number>0</number>
    </property>
    <item>
@@ -185,22 +185,8 @@
  <resources>
   <include location="../../../res/extui/extui.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>cbSymbol</sender>
-   <signal>activated(QString)</signal>
-   <receiver>QG_DimensionLabelEditor</receiver>
-   <slot>insertSign(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>insertSign(QString)</slot>
+ </slots>
 </ui>

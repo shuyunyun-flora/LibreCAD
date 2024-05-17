@@ -125,54 +125,10 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>bUndo</sender>
-   <signal>clicked()</signal>
-   <receiver>Ui_SplineOptions</receiver>
-   <slot>undo()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbDegree</sender>
-   <signal>activated(QString)</signal>
-   <receiver>Ui_SplineOptions</receiver>
-   <slot>setDegree(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbClosed</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>Ui_SplineOptions</receiver>
-   <slot>setClosed(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>undo()</slot>
+  <slot>setDegree(QString)</slot>
+  <slot>setClosed(bool)</slot>
+ </slots>
 </ui>

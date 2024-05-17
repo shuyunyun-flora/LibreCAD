@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>323</width>
-    <height>221</height>
+    <width>342</width>
+    <height>271</height>
    </rect>
   </property>
   <property name="baseSize">
@@ -194,40 +194,10 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>LC_LayerDialogEx</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>126</x>
-     <y>186</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>LC_LayerDialogEx</receiver>
-   <slot>validate()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>126</x>
-     <y>186</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>validate()</slot>
+ </slots>
  <buttongroups>
   <buttongroup name="bgLayerType"/>
  </buttongroups>
