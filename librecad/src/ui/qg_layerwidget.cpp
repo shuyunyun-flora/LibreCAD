@@ -41,6 +41,7 @@
 #include <QContextMenuEvent>
 #include <QKeyEvent>
 #include "rs_debug.h"
+#include <QtCore5Compat/qregexp.h>
 
 QG_LayerModel::QG_LayerModel(QObject * parent) : QAbstractTableModel(parent) {
     layerVisible = QIcon(":/icons/visible.svg");

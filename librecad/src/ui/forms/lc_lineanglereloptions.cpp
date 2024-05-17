@@ -52,7 +52,7 @@ void LC_LineAngleRelOptions::doSetAction(RS_ActionInterface *a, bool update){
             angleIsRelative = action->isAngleRelative();
             lengthIsFree = action->isLengthFree();
             divide = action->isDivideLine();
-            distance = action->getSnapDistance();
+            distance = QString::number(action->getSnapDistance(), 'f', 3);
         } else {
             length = load("Length", "1.0");
             offset = load("Offset", "1.0");

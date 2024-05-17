@@ -70,6 +70,7 @@ class RS_Pen;
 class TwoStackedLabels;
 struct RS_SnapMode;
 
+
 struct DockAreas
 {
     QAction* left {nullptr};

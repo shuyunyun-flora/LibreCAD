@@ -1,0 +1,632 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2024-05-17 11:29:48",
+  "files": {
+    "E:\\GitHub\\LibreCAD\\libraries\\libdxfrw\\dxfrw.vcxproj": {
+      "before": "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",
+      "after": "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"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2024-05-17 11:29:48</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Replacing paths with "$(QTDIR)"]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;]]></Span><Span Background="LightCoral"><![CDATA[C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;]]></Span><Span Background="LightGreen"><![CDATA[$(QTDIR)\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;]]></Span><Span Background="LightCoral"><![CDATA[C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;]]></Span><Span Background="LightGreen"><![CDATA[$(QTDIR)\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Converting custom build steps to Qt/MSBuild items]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<AdditionalIncludeDirectories>.;]]></Span><Span><![CDATA[$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightGreen"><![CDATA[<AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;]]></Span><Span><![CDATA[$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<AdditionalIncludeDirectories>.;]]></Span><Span><![CDATA[$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightGreen"><![CDATA[<AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;]]></Span><Span><![CDATA[$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightCoral"><![CDATA[<Keyword>Qt4VSv1.0</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Copying Qt build reference to QtInstall project property]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightCoral"><![CDATA['=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightGreen"><![CDATA['=='Release|x64'">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[  ]]></Span><Span Background="LightCoral"><![CDATA[<PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<QtInstall>Qt_6.7.0_msvc2019_64</QtInstall>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </PropertyGroup>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtInstall>Qt_6.7.0_msvc2019_64</QtInstall>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </PropertyGroup>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Removing Qt module include paths from compiler properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;]]></Span><Span Background="LightCoral"><![CDATA[$(QTDIR)\mkspecs\win32-msvc;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;]]></Span><Span Background="LightCoral"><![CDATA[$(QTDIR)\mkspecs\win32-msvc;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Adding Qt module names to QtModules project property]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[E:\GitHub\LibreCAD\libraries\libdxfrw\dxfrw.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtModules></QtModules>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtModules></QtModules>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--4tPqRmafOYv4EIJOIMmu+sABNA9cbuu4Yte2EsbpDZI=-->

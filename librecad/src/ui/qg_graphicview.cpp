@@ -621,53 +621,53 @@ bool QG_GraphicView::event(QEvent *event)
  * support for the wacom graphic tablet.
  */
 void QG_GraphicView::tabletEvent(QTabletEvent* e) {
-    if (testAttribute(Qt::WA_UnderMouse)) {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
-        switch (e->deviceType()) {
-#else
-        switch (e->device()) {
-#endif
-        case QTabletEvent::Eraser:
-            if (e->type()==QEvent::TabletRelease) {
-                if (container) {
-
-                    RS_ActionSelectSingle* a =
-                        new RS_ActionSelectSingle(*container, *this);
-                    setCurrentAction(a);
-                    QMouseEvent ev(QEvent::MouseButtonRelease, e->pos(),
-                                   Qt::LeftButton, Qt::LeftButton, Qt::NoModifier);//RLZ
-                    mouseReleaseEvent(&ev);
-                    a->finish();
-
-                    if (container->countSelected()>0) {
-                        setCurrentAction(
-                            new RS_ActionModifyDelete(*container, *this));
-                    }
-                }
-            }
-            break;
-
-        case QTabletEvent::Stylus:
-        case QTabletEvent::Puck:
-            if (e->type()==QEvent::TabletPress) {
-                QMouseEvent ev(QEvent::MouseButtonPress, e->pos(),
-                               Qt::LeftButton, Qt::LeftButton, Qt::NoModifier);//RLZ
-                mousePressEvent(&ev);
-            } else if (e->type()==QEvent::TabletRelease) {
-                QMouseEvent ev(QEvent::MouseButtonRelease, e->pos(),
-                               Qt::LeftButton, Qt::LeftButton, Qt::NoModifier);//RLZ
-                mouseReleaseEvent(&ev);
-            } else if (e->type()==QEvent::TabletMove) {
-                QMouseEvent ev(QEvent::MouseMove, e->pos(),
-                               Qt::NoButton, {}, Qt::NoModifier);//RLZ
-                mouseMoveEvent(&ev);
-            }
-            break;
-
-        default:
-            break;
-        }
-    }
+//    if (testAttribute(Qt::WA_UnderMouse)) {
+//#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+//        switch (e->deviceType()) {
+//#else
+//        switch (e->device()) {
+//#endif
+//        case QTabletEvent::Eraser:
+//            if (e->type()==QEvent::TabletRelease) {
+//                if (container) {
+//
+//                    RS_ActionSelectSingle* a =
+//                        new RS_ActionSelectSingle(*container, *this);
+//                    setCurrentAction(a);
+//                    QMouseEvent ev(QEvent::MouseButtonRelease, e->pos(),
+//                                   Qt::LeftButton, Qt::LeftButton, Qt::NoModifier);//RLZ
+//                    mouseReleaseEvent(&ev);
+//                    a->finish();
+//
+//                    if (container->countSelected()>0) {
+//                        setCurrentAction(
+//                            new RS_ActionModifyDelete(*container, *this));
+//                    }
+//                }
+//            }
+//            break;
+//
+//        case QTabletEvent::Stylus:
+//        case QTabletEvent::Puck:
+//            if (e->type()==QEvent::TabletPress) {
+//                QMouseEvent ev(QEvent::MouseButtonPress, e->pos(),
+//                               Qt::LeftButton, Qt::LeftButton, Qt::NoModifier);//RLZ
+//                mousePressEvent(&ev);
+//            } else if (e->type()==QEvent::TabletRelease) {
+//                QMouseEvent ev(QEvent::MouseButtonRelease, e->pos(),
+//                               Qt::LeftButton, Qt::LeftButton, Qt::NoModifier);//RLZ
+//                mouseReleaseEvent(&ev);
+//            } else if (e->type()==QEvent::TabletMove) {
+//                QMouseEvent ev(QEvent::MouseMove, e->pos(),
+//                               Qt::NoButton, {}, Qt::NoModifier);//RLZ
+//                mouseMoveEvent(&ev);
+//            }
+//            break;
+//
+//        default:
+//            break;
+//        }
+//    }
 
     // a 'mouse' click:
     /*if (e->pressure()>10 && lastPressure<10) {
@@ -700,7 +700,7 @@ void QG_GraphicView::leaveEvent(QEvent* e) {
 
 void QG_GraphicView::enterEvent(QEvent* e) {
     eventHandler->mouseEnterEvent();
-    QWidget::enterEvent(e);
+    QWidget::enterEvent((QEnterEvent*)e);
 }
 
 
@@ -1226,7 +1226,7 @@ void QG_GraphicView::addScrollbars()
 
     setOffset(50, 50);
 
-    layout->setMargin(0);
+    layout->setContentsMargins(QMargins(0, 0, 0, 0));
     layout->setSpacing(0);
     layout->setColumnStretch(0, 1);
     layout->setColumnStretch(1, 0);

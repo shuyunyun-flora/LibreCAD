@@ -24,7 +24,9 @@
 **
 **********************************************************************/
 
-#include <QTextCodec>
+#include <QtCore5Compat/qtextcodec.h>
+#include <QtCore5Compat/qregexp.h>
+#include <QRegularExpression>
 #include "rs_filterjww.h"
 
 #include "dl_attributes.h"
@@ -487,7 +489,7 @@ void RS_FilterJWW::addMTextChunk(const char* text) {
 QString RS_FilterJWW::getDXFEncoding() {
 
     QString acadver=variables.getString("$ACADVER", "");
-    acadver.replace(QRegExp("[a-zA-Z]"), "");
+    acadver.replace(QRegularExpression("[a-zA-Z]"), "");
     bool ok;
     int version=acadver.toInt(&ok);
 
@@ -2381,7 +2383,7 @@ void RS_FilterJWW::writeEntityContainer(DL_WriterA& dw, RS_EntityContainer* con,
 
         while (true) {
                 tmp = tmp/c;
-                blkName.append((char) tmp %10 + 48);
+                blkName.append((QChar) (tmp %10 + 48));
                 c *= 10;
                 if (tmp < 10) {
                         break;
@@ -3086,15 +3088,15 @@ QString RS_FilterJWW::toNativeString(const char* data, const QString& encoding) 
     }
 
     // Line feed:
-    res = res.replace(QRegExp("\\\\P"), "\n");
+    res = res.replace(QRegularExpression("\\\\P"), "\n");
     // Space:
-    res = res.replace(QRegExp("\\\\~"), " ");
+    res = res.replace(QRegularExpression("\\\\~"), " ");
     // diameter:
-    res = res.replace(QRegExp("%%c"), QChar(0x2205));
+    res = res.replace(QRegularExpression("%%c"), QChar(0x2205));
     // degree:
-    res = res.replace(QRegExp("%%d"), QChar(0x00B0));
+    res = res.replace(QRegularExpression("%%d"), QChar(0x00B0));
     // plus/minus
-    res = res.replace(QRegExp("%%p"), QChar(0x00B1));
+    res = res.replace(QRegularExpression("%%p"), QChar(0x00B1));
 
     // Unicode characters:
     QString cap = "";
@@ -3107,7 +3109,7 @@ QString RS_FilterJWW::toNativeString(const char* data, const QString& encoding) 
         if (!cap.isNull()) {
             uCode = cap.right(4).toInt(&ok, 16);
             // workaround for Qt 3.0.x:
-            res.replace(QRegExp("\\\\U\\+" + cap.right(4)), QChar(uCode));
+            res.replace(QRegularExpression("\\\\U\\+" + cap.right(4)), QChar(uCode));
             // for Qt 3.1:
             //res.replace(cap, QChar(uCode));
         }
@@ -3125,7 +3127,7 @@ QString RS_FilterJWW::toNativeString(const char* data, const QString& encoding) 
         if (!cap.isNull()) {
             uCode = cap.right(3).toInt(&ok, 10);
             // workaround for Qt 3.0.x:
-            res.replace(QRegExp("%%" + cap.right(3)), QChar(uCode));
+            res.replace(QRegularExpression("%%" + cap.right(3)), QChar(uCode));
             // for Qt 3.1:
             //res.replace(cap, QChar(uCode));
         }
@@ -3133,7 +3135,7 @@ QString RS_FilterJWW::toNativeString(const char* data, const QString& encoding) 
     while (!cap.isNull());
 
     // Ignore font tags:
-    res = res.replace(QRegExp("\\\\f[0-9A-Za-z| ]{0,};"), "");
+    res = res.replace(QRegularExpression("\\\\f[0-9A-Za-z| ]{0,};"), "");
 
     // Ignore {}
     res = res.replace("\\{", "#curly#");

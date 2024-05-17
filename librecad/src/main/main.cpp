@@ -145,14 +145,14 @@ int main(int argc, char** argv)
             // to control the level of debugging output use --debug with level 0-6, e.g. --debug3
             // for a list of debug levels use --debug?
             // if no level follows, the debugging level is set
-            argstr.remove(QRegExp("^"+lpDebugSwitch0));
-            argstr.remove(QRegExp("^"+lpDebugSwitch1));
+            argstr.remove(QRegularExpression("^"+lpDebugSwitch0));
+            argstr.remove(QRegularExpression("^"+lpDebugSwitch1));
             char level;
             if(argstr.size()==0)
             {
                 if(i+1<argc)
                 {
-                    if(QRegExp("\\d*").exactMatch(argv[i+1]))
+                    /*if(QRegExp("\\d*").exactMatch(argv[i+1]))
                     {
                         ++i;
                         qDebug()<<"reading "<<argv[i]<<" as debugging level";
@@ -160,7 +160,7 @@ int main(int argc, char** argv)
                         argClean<<i;
                     }
                     else
-                        level='3';
+                        level='3';*/
                 }
                 else
                     level='3'; //default to D_WARNING
@@ -344,7 +344,7 @@ int main(int argc, char** argv)
     if (reopenLastFiles){
         if (fileList.isEmpty()){
             if (!lastFiles.isEmpty()){
-                QStringList filesList = lastFiles.split(";", QString::SplitBehavior::SkipEmptyParts);
+                QStringList filesList = lastFiles.split(";", Qt::SkipEmptyParts);
                 if (!filesList.isEmpty()){
                     for (int i = 0; i < filesList.count(); i++) {
                         QString filename = filesList.at(i);

@@ -16,7 +16,7 @@
 
 #include <QtGui>
 #include <QApplication>
-#include <QDesktopWidget>
+//#include <QDesktopWidget>
 #include <QDialog>
 #include <QGroupBox>
 #include <QDialogButtonBox>

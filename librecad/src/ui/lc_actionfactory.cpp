@@ -1588,10 +1588,10 @@ void LC_ActionFactory::commonActions(QMap<QString, QAction*>& a_map, LC_ActionGr
 
 	action = new QAction(tr("Save A&ll..."), agm->file);
 	action->setIcon(QIcon(":/icons/save_all.svg"));
-	QKeySequence shortcut = QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_S);
-	// only define this shortcut for platforms not already using it for save as
-	if (shortcut != QKeySequence::SaveAs)
-		action->setShortcut(shortcut);
+	//QKeySequence shortcut = QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_S);
+	//// only define this shortcut for platforms not already using it for save as
+	//if (shortcut != QKeySequence::SaveAs)
+	//	action->setShortcut(shortcut);
 	connect(action, SIGNAL(triggered()), main_window, SLOT(slotFileSaveAll()));
 	action->setObjectName("FileSaveAll");
 	a_map["FileSaveAll"] = action;

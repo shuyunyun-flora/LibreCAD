@@ -36,6 +36,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QContextMenuEvent>
+#include <QtCore5Compat/qregexp.h>
 
 #include "qg_actionhandler.h"
 #include "qg_blockwidget.h"

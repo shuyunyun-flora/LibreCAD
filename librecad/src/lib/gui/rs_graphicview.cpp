@@ -29,7 +29,8 @@
 #include<cmath>
 
 #include <QApplication>
-#include <QDesktopWidget>
+#include <QScreen>
+//#include <QDesktopWidget>
 #include <QAction>
 #include <QMouseEvent>
 #include <QtAlgorithms>
@@ -918,7 +919,8 @@ void RS_GraphicView::drawLayer1(RS_Painter *painter) {
 	if (!isPrintPreview()) {
 
 		//increase grid point size on for DPI>96
-		int dpiX = qApp->desktop()->logicalDpiX();
+        QScreen* screen = QGuiApplication::primaryScreen();
+        int dpiX = screen->logicalDotsPerInch();
         const bool isHiDpi = dpiX > 96;
 		//        DEBUG_HEADER
 		//        RS_DEBUG->print(RS_Debug::D_ERROR, "dpiX=%d\n",dpiX);

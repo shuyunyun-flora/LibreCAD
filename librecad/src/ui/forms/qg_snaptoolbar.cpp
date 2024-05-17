@@ -40,108 +40,108 @@ QG_SnapToolBar::QG_SnapToolBar(QWidget* parent, QG_ActionHandler* ah, LC_ActionG
     , actionHandler(ah)
 {
 
-    auto action = new QAction(tr("Exclusive Snap Mode"), agm->snap_extras);
-    action->setShortcut(QKeySequence(Qt::ALT | Qt::Key_X));
-    action->setIcon(QIcon(":/icons/exclusive.svg"));
-    action->setCheckable(true);
-    connect(action, SIGNAL(toggled(bool)),
-            agm, SLOT(toggleExclusiveSnapMode(bool)));
-    action->setObjectName("ExclusiveSnapMode");
-    addAction(action);
+ //   auto action = new QAction(tr("Exclusive Snap Mode"), agm->snap_extras);
+ //   action->setShortcut(QKeySequence(Qt::ALT | Qt::Key_X));
+ //   action->setIcon(QIcon(":/icons/exclusive.svg"));
+ //   action->setCheckable(true);
+ //   connect(action, SIGNAL(toggled(bool)),
+ //           agm, SLOT(toggleExclusiveSnapMode(bool)));
+ //   action->setObjectName("ExclusiveSnapMode");
+ //   addAction(action);
 
-    snapMiddleManual = new QAction(QIcon(":/icons/snap_middle_manual.svg"), tr("Snap Middle Manual"), agm->snap);
-    snapMiddleManual->setObjectName("SnapMiddleManual");
-    snapMiddleManual->setCheckable(true);
-    connect(snapMiddleManual, &QAction::triggered, actionHandler, &QG_ActionHandler::slotSnapMiddleManual);
-    this->addAction(snapMiddleManual);
+ //   snapMiddleManual = new QAction(QIcon(":/icons/snap_middle_manual.svg"), tr("Snap Middle Manual"), agm->snap);
+ //   snapMiddleManual->setObjectName("SnapMiddleManual");
+ //   snapMiddleManual->setCheckable(true);
+ //   connect(snapMiddleManual, &QAction::triggered, actionHandler, &QG_ActionHandler::slotSnapMiddleManual);
+ //   this->addAction(snapMiddleManual);
 
-    snapFree = new QAction(QIcon(":/icons/snap_free.svg"), tr("Free Snap"), agm->snap_extras);
-    snapFree->setCheckable(true);
-    snapFree->setObjectName("SnapFree");
-    connect(snapFree, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapFree);
-    snapGrid = new QAction(QIcon(":/icons/snap_grid.svg"), tr("Snap on grid"), agm->snap);
-    snapGrid->setObjectName("SnapGrid");
-    snapGrid->setCheckable(true);
-    connect(snapGrid, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapGrid);
-    snapEnd = new QAction(QIcon(":/icons/snap_endpoints.svg"), tr("Snap on Endpoints"), agm->snap);
-    snapEnd->setObjectName("SnapEnd");
-    snapEnd->setCheckable(true);
-    connect(snapEnd, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapEnd);
-    snapOnEntity = new QAction(QIcon(":/icons/snap_entity.svg"), tr("Snap on Entity"), agm->snap);
-    snapOnEntity->setObjectName("SnapEntity");
-    snapOnEntity->setCheckable(true);
-    connect(snapOnEntity, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapOnEntity);
-    snapCenter = new QAction(QIcon(":/icons/snap_center.svg"), tr("Snap Center"), agm->snap);
-    snapCenter->setObjectName("SnapCenter");
-    snapCenter->setCheckable(true);
-    connect(snapCenter, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapCenter);
-    snapMiddle = new QAction(QIcon(":/icons/snap_middle.svg"), tr("Snap Middle"), agm->snap);
-    snapMiddle->setObjectName("SnapMiddle");
-    snapMiddle->setCheckable(true);
-    connect(snapMiddle, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapMiddle);
-    snapDistance = new QAction(QIcon(":/icons/snap_distance.svg"), tr("Snap Distance"), agm->snap);
-    snapDistance->setObjectName("SnapDistance");
-    snapDistance ->setCheckable(true);
-    connect(snapDistance, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(snapDistance);
-    snapIntersection = new QAction(QIcon(":/icons/snap_intersection.svg"), tr("Snap Intersection"), agm->snap);
-    snapIntersection->setObjectName("SnapIntersection");
-    snapIntersection->setCheckable(true);
-    connect(snapIntersection, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-	this->addAction(snapIntersection);
+ //   snapFree = new QAction(QIcon(":/icons/snap_free.svg"), tr("Free Snap"), agm->snap_extras);
+ //   snapFree->setCheckable(true);
+ //   snapFree->setObjectName("SnapFree");
+ //   connect(snapFree, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapFree);
+ //   snapGrid = new QAction(QIcon(":/icons/snap_grid.svg"), tr("Snap on grid"), agm->snap);
+ //   snapGrid->setObjectName("SnapGrid");
+ //   snapGrid->setCheckable(true);
+ //   connect(snapGrid, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapGrid);
+ //   snapEnd = new QAction(QIcon(":/icons/snap_endpoints.svg"), tr("Snap on Endpoints"), agm->snap);
+ //   snapEnd->setObjectName("SnapEnd");
+ //   snapEnd->setCheckable(true);
+ //   connect(snapEnd, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapEnd);
+ //   snapOnEntity = new QAction(QIcon(":/icons/snap_entity.svg"), tr("Snap on Entity"), agm->snap);
+ //   snapOnEntity->setObjectName("SnapEntity");
+ //   snapOnEntity->setCheckable(true);
+ //   connect(snapOnEntity, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapOnEntity);
+ //   snapCenter = new QAction(QIcon(":/icons/snap_center.svg"), tr("Snap Center"), agm->snap);
+ //   snapCenter->setObjectName("SnapCenter");
+ //   snapCenter->setCheckable(true);
+ //   connect(snapCenter, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapCenter);
+ //   snapMiddle = new QAction(QIcon(":/icons/snap_middle.svg"), tr("Snap Middle"), agm->snap);
+ //   snapMiddle->setObjectName("SnapMiddle");
+ //   snapMiddle->setCheckable(true);
+ //   connect(snapMiddle, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapMiddle);
+ //   snapDistance = new QAction(QIcon(":/icons/snap_distance.svg"), tr("Snap Distance"), agm->snap);
+ //   snapDistance->setObjectName("SnapDistance");
+ //   snapDistance ->setCheckable(true);
+ //   connect(snapDistance, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(snapDistance);
+ //   snapIntersection = new QAction(QIcon(":/icons/snap_intersection.svg"), tr("Snap Intersection"), agm->snap);
+ //   snapIntersection->setObjectName("SnapIntersection");
+ //   snapIntersection->setCheckable(true);
+ //   connect(snapIntersection, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+	//this->addAction(snapIntersection);
 
-    this->addSeparator();
+ //   this->addSeparator();
 
-    restrictHorizontal = new QAction(QIcon(":/icons/restr_hor.svg"),
-                                     tr("Restrict Horizontal"), agm->restriction);
-    restrictHorizontal->setObjectName("RestrictHorizontal");
-    restrictHorizontal->setCheckable(true);
-    connect(restrictHorizontal, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(restrictHorizontal);
-    restrictVertical = new QAction(QIcon(":/icons/restr_ver.svg"),
-                                   tr("Restrict Vertical"), agm->restriction);
-    restrictVertical->setObjectName("RestrictVertical");
-    restrictVertical->setCheckable(true);
-    connect(restrictVertical, SIGNAL(triggered()), this, SLOT(actionTriggered()));
-    this->addAction(restrictVertical);
+ //   restrictHorizontal = new QAction(QIcon(":/icons/restr_hor.svg"),
+ //                                    tr("Restrict Horizontal"), agm->restriction);
+ //   restrictHorizontal->setObjectName("RestrictHorizontal");
+ //   restrictHorizontal->setCheckable(true);
+ //   connect(restrictHorizontal, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(restrictHorizontal);
+ //   restrictVertical = new QAction(QIcon(":/icons/restr_ver.svg"),
+ //                                  tr("Restrict Vertical"), agm->restriction);
+ //   restrictVertical->setObjectName("RestrictVertical");
+ //   restrictVertical->setCheckable(true);
+ //   connect(restrictVertical, SIGNAL(triggered()), this, SLOT(actionTriggered()));
+ //   this->addAction(restrictVertical);
 
-    restrictOrthogonal = new QAction(QIcon(":/icons/restr_ortho.svg"),
-                                   tr("Restrict Orthogonal"), agm->restriction);
-    restrictOrthogonal->setObjectName("RestrictOrthogonal");
-    restrictOrthogonal->setCheckable(true);
-    connect(restrictOrthogonal, SIGNAL(triggered(bool)), this,
-            SLOT(slotRestrictOrthogonal(bool)));
-	this->addAction(restrictOrthogonal);
+ //   restrictOrthogonal = new QAction(QIcon(":/icons/restr_ortho.svg"),
+ //                                  tr("Restrict Orthogonal"), agm->restriction);
+ //   restrictOrthogonal->setObjectName("RestrictOrthogonal");
+ //   restrictOrthogonal->setCheckable(true);
+ //   connect(restrictOrthogonal, SIGNAL(triggered(bool)), this,
+ //           SLOT(slotRestrictOrthogonal(bool)));
+	//this->addAction(restrictOrthogonal);
 
-    restrictNothing = new QAction(QIcon(":/extui/restrictnothing.png"),
-                                   tr("Restrict Nothing"), agm->restriction);
-    restrictNothing->setObjectName("RestrictNothing");
-    restrictNothing->setCheckable(true);
-    connect(restrictNothing, SIGNAL(triggered(bool)), this,
-            SLOT(slotRestrictNothing(bool)));
+ //   restrictNothing = new QAction(QIcon(":/extui/restrictnothing.png"),
+ //                                  tr("Restrict Nothing"), agm->restriction);
+ //   restrictNothing->setObjectName("RestrictNothing");
+ //   restrictNothing->setCheckable(true);
+ //   connect(restrictNothing, SIGNAL(triggered(bool)), this,
+ //           SLOT(slotRestrictNothing(bool)));
 
-    this->addSeparator();
-    bRelZero = new QAction(QIcon(":/icons/set_rel_zero.svg"), tr("Set relative zero position"), agm->other);
-    bRelZero->setObjectName("SetRelativeZero");
-    bRelZero->setCheckable(false);
-    connect(bRelZero, SIGNAL(triggered()), actionHandler, SLOT(slotSetRelativeZero()));
-    //connect(bRelZero, SIGNAL(triggered()), this, SLOT(slotSetRelativeZero()));
-    this->addAction(bRelZero);
-    bLockRelZero = new QAction(QIcon(":/icons/lock_rel_zero.svg"), tr("Lock relative zero position"), agm->other);
-    bLockRelZero->setObjectName("LockRelativeZero");
-    bLockRelZero->setCheckable(true);
-    connect(bLockRelZero, SIGNAL(toggled(bool)),actionHandler, SLOT(slotLockRelativeZero(bool)));
-    this->addAction(bLockRelZero);
-    //restore snapMode from saved preferences
-    RS_SETTINGS->beginGroup("/Snap");
-    setSnaps( RS_SnapMode::fromInt( RS_SETTINGS->readNumEntry( "/SnapMode", 0)));
-    RS_SETTINGS->endGroup();
+ //   this->addSeparator();
+ //   bRelZero = new QAction(QIcon(":/icons/set_rel_zero.svg"), tr("Set relative zero position"), agm->other);
+ //   bRelZero->setObjectName("SetRelativeZero");
+ //   bRelZero->setCheckable(false);
+ //   connect(bRelZero, SIGNAL(triggered()), actionHandler, SLOT(slotSetRelativeZero()));
+ //   //connect(bRelZero, SIGNAL(triggered()), this, SLOT(slotSetRelativeZero()));
+ //   this->addAction(bRelZero);
+ //   bLockRelZero = new QAction(QIcon(":/icons/lock_rel_zero.svg"), tr("Lock relative zero position"), agm->other);
+ //   bLockRelZero->setObjectName("LockRelativeZero");
+ //   bLockRelZero->setCheckable(true);
+ //   connect(bLockRelZero, SIGNAL(toggled(bool)),actionHandler, SLOT(slotLockRelativeZero(bool)));
+ //   this->addAction(bLockRelZero);
+ //   //restore snapMode from saved preferences
+ //   RS_SETTINGS->beginGroup("/Snap");
+ //   setSnaps( RS_SnapMode::fromInt( RS_SETTINGS->readNumEntry( "/SnapMode", 0)));
+ //   RS_SETTINGS->endGroup();
 }
 
 void QG_SnapToolBar::slotUnsetSnapMiddleManual()

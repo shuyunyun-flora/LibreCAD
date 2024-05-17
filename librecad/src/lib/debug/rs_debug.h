@@ -29,11 +29,10 @@
 #define RS_DEBUG_H
 
 #include <QTextStream>
+#include <QString>
 #ifdef __hpux
 #include <sys/_size_t.h>
 #endif
-
-class QString;
 
 /** print out a debug header*/
 #define DEBUG_HEADER debugHeader(__FILE__, __func__, __LINE__);

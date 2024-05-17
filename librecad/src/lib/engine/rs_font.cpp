@@ -29,6 +29,7 @@
 #include <iostream>
 #include <QTextStream>
 #include <QTextCodec>
+#include <QtCore5Compat/qregexp.h>
 
 #include "rs_font.h"
 #include "rs_arc.h"
@@ -182,7 +183,7 @@ void RS_Font::readCXF(QString path) {
             } else if (identifier.toLower()=="name") {
                 names.append(value);
             } else if (identifier.toLower()=="encoding") {
-                ts.setCodec(QTextCodec::codecForName(value.toLatin1()));
+                ts.setEncoding(QStringConverter::encodingForName(value.toLatin1()).value());
                 encoding = value;
             }
         }
@@ -321,7 +322,7 @@ void RS_Font::readLFF(QString path) {
             } else if (identifier.toLower()=="license") {
                 fileLicense = value;
             } else if (identifier.toLower()=="encoding") {
-                ts.setCodec(QTextCodec::codecForName(value.toLatin1()));
+                ts.setEncoding(QStringConverter::encodingForName(value.toLatin1()).value());
                 encoding = value;
             } else if (identifier.toLower()=="created") {
                 fileCreate = value;

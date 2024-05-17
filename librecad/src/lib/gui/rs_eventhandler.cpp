@@ -24,7 +24,8 @@
 **
 **********************************************************************/
 
-#include <QRegExp>
+#include <QtCore5Compat/qregexp.h>
+#include <QRegularExpression>
 #include <QAction>
 #include <QMouseEvent>
 #include "rs_eventhandler.h"
@@ -55,7 +56,7 @@ namespace {
             QString value = QString{}.setNum(RS_Math::eval(formula));
             LC_ERR<<"formula="<<formula<<": value="<<value;
             return input.left(pos)
-                    + input.mid(pos, rx.matchedLength()).replace(rx, R"( \1)" + value + tail)
+                    + input.mid(pos, rx.matchedLength()).replace(QRegularExpression(rx.pattern()), R"( \1)" + value + tail)
                     + evaluateFraction(input.right(input.size() - pos - rx.matchedLength()), rx, index, tailI);
         }
         return input;
@@ -80,7 +81,7 @@ namespace {
             }};
         LC_LOG<<"input="<<input;
         for(auto& [rx, index, tailI] : regexps)
-            input = evaluateFraction(input, rx, index, tailI).replace(QRegExp(R"(\s+)"), QString{});
+            input = evaluateFraction(input, rx, index, tailI).replace(QRegularExpression(R"(\s+)"), QString{});
         LC_LOG<<"eval: "<<input;
         return input;
     }

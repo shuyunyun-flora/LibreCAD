@@ -28,6 +28,7 @@
 #include<cmath>
 
 #include <QDockWidget>
+#include <QStringList>
 
 #include "qg_actionhandler.h"
 

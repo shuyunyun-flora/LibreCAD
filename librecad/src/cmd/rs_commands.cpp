@@ -29,6 +29,7 @@
 
 #include <QObject>
 #include <QTextStream>
+#include <QRegularExpression>
 
 #include "rs_commands.h"
 
@@ -1250,7 +1251,7 @@ void RS_Commands::updateAlias(){
                 if (line.isEmpty() || line.at(0)=='#' ) continue;
                 // Read alias
 #if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
-                QStringList txtList = line.split(QRegExp(R"(\s)"),Qt::SkipEmptyParts);
+                QStringList txtList = line.split(QRegularExpression(R"(\s)"),Qt::SkipEmptyParts);
 #else
                 QStringList txtList = line.split(QRegExp(R"(\s)"),QString::SkipEmptyParts);
 #endif
@@ -1354,7 +1355,7 @@ RS2::ActionType RS_Commands::keycodeToAction(const QString& code) const {
     if(!(code.startsWith(FnPrefix) ||
          code.startsWith(AltPrefix) ||
          code.startsWith(MetaPrefix))) {
-    	if(code.size() < 1 || code.contains(QRegExp("^[a-z].*",Qt::CaseInsensitive)) == false )
+    	if(code.size() < 1 || code.contains(QRegularExpression("^[a-z].*", QRegularExpression::PatternOption::CaseInsensitiveOption)) == false )
             return RS2::ActionNone;
         c = code.toLower();
     } else {

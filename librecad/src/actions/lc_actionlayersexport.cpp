@@ -27,6 +27,7 @@
 
 #include <QApplication>
 #include <QDir>
+#include <QStringList>
 #include <QFileDialog>
 #include <QHash>
 #include <QStatusBar>

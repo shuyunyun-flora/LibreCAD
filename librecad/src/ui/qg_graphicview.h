@@ -110,7 +110,7 @@ protected:
 	void mouseMoveEvent(QMouseEvent* e) override;
 	void tabletEvent(QTabletEvent* e) override;
 	void leaveEvent(QEvent*) override;
-	void enterEvent(QEvent*) override;
+	void enterEvent(QEvent*);
 	void focusInEvent(QFocusEvent*) override;
 	void focusOutEvent(QFocusEvent*) override;
 	void wheelEvent(QWheelEvent* e) override;

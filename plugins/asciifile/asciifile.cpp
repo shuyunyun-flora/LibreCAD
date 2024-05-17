@@ -21,6 +21,7 @@
 #include <QCheckBox>
 #include <QFormLayout>
 #include <QPushButton>
+#include <QStringList>
 #include <QFileDialog>
 #include <QSettings>
 

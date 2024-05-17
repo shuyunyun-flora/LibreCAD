@@ -21,6 +21,7 @@
 #include <QComboBox>
 #include <QLabel>
 #include <QRect>
+#include <QStringList>
 #include <QFileDialog>
 #include <QTextStream>
 #include <QMessageBox>
