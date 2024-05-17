@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>653</width>
-    <height>519</height>
+    <width>715</width>
+    <height>616</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1078,7 +1078,7 @@
         </spacer>
        </item>
        <item row="5" column="7">
-        <widget class="QG_WidthBox" name="cbDimLwD"/>
+        <widget class="QG_WidthBox" name="cbDimLwD" native="true"/>
        </item>
        <item row="11" column="6">
         <widget class="QLabel" name="lDimAUnit">
@@ -1263,7 +1263,7 @@
         <widget class="QComboBox" name="cbDimDec"/>
        </item>
        <item row="4" column="7">
-        <widget class="QG_ColorBox" name="cbDimClrD"/>
+        <widget class="QG_ColorBox" name="cbDimClrD" native="true"/>
        </item>
        <item row="10" column="2">
         <widget class="QComboBox" name="cbDimExe">
@@ -1438,7 +1438,7 @@
         </widget>
        </item>
        <item row="7" column="2">
-        <widget class="QG_ColorBox" name="cbDimClrT"/>
+        <widget class="QG_ColorBox" name="cbDimClrT" native="true"/>
        </item>
        <item row="5" column="2">
         <widget class="QComboBox" name="cbDimTih">
@@ -1580,14 +1580,14 @@
         </widget>
        </item>
        <item row="13" column="2">
-        <widget class="QG_WidthBox" name="cbDimLwE"/>
+        <widget class="QG_WidthBox" name="cbDimLwE" native="true"/>
        </item>
        <item row="12" column="2">
-        <widget class="QG_ColorBox" name="cbDimClrE">
+        <widget class="QG_ColorBox" name="cbDimClrE" native="true">
          <property name="toolTip">
           <string/>
          </property>
-         <property name="editable">
+         <property name="editable" stdset="0">
           <bool>false</bool>
          </property>
         </widget>
@@ -2715,13 +2715,13 @@
  <customwidgets>
   <customwidget>
    <class>QG_ColorBox</class>
-   <extends>QComboBox</extends>
-   <header>../qg_colorbox.h</header>
+   <extends>QWidget</extends>
+   <header>qg_colorbox.h</header>
   </customwidget>
   <customwidget>
    <class>QG_WidthBox</class>
-   <extends>QComboBox</extends>
-   <header>../qg_widthbox.h</header>
+   <extends>QWidget</extends>
+   <header>qg_widthbox.h</header>
   </customwidget>
   <customwidget>
    <class>QG_FontBox</class>
@@ -2811,311 +2811,17 @@
  </tabstops>
  <resources>
   <include location="../../../res/icons/icons.qrc"/>
+  <include location="../../../res/icons/icons.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>validate()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>261</x>
-     <y>492</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>261</x>
-     <y>492</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbLengthFormat</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updateLengthPrecision()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>187</x>
-     <y>150</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbDimLUnit</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updateDimLengthPrecision()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>494</x>
-     <y>241</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbAngleFormat</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updateAnglePrecision()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>495</x>
-     <y>150</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbDimAUnit</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updateDimAnglePrecision()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>494</x>
-     <y>356</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbUnit</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>161</x>
-     <y>86</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbAngleFormat</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>495</x>
-     <y>150</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbLengthFormat</sender>
-   <signal>activated(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>187</x>
-     <y>150</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbAnglePrecision</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>495</x>
-     <y>179</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbLengthPrecision</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>187</x>
-     <y>179</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbPaperFormat</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperSize()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>46</x>
-     <y>104</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cbUnit</sender>
-   <signal>activated(int)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>161</x>
-     <y>86</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>leMarginRight</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperPreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>250</x>
-     <y>312</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>250</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>leMarginLeft</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperPreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>144</x>
-     <y>341</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>250</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>leMarginBottom</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperPreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>174</x>
-     <y>341</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>250</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>leMarginTop</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperPreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>144</x>
-     <y>341</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>250</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>lePaperWidth</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperPreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>144</x>
-     <y>341</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>250</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>lePaperHeight</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>QG_DlgOptionsDrawing</receiver>
-   <slot>updatePaperPreview()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>144</x>
-     <y>341</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>250</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>validate()</slot>
+  <slot>updateLengthPrecision()</slot>
+  <slot>updateDimLengthPrecision()</slot>
+  <slot>updateAnglePrecision()</slot>
+  <slot>updateDimAnglePrecision()</slot>
+  <slot>updatePreview()</slot>
+  <slot>updatePaperSize()</slot>
+  <slot>updatePaperPreview()</slot>
+ </slots>
 </ui>
