@@ -42,7 +42,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\sample\sample_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\sample\sampled_resource.rc" />
+    <ResourceCompile Include=".\sample_resource.rc" />
+    <ResourceCompile Include=".\sampled_resource.rc" />
   </ItemGroup>
 </Project>
