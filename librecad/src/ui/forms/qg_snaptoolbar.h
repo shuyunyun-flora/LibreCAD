@@ -85,6 +85,7 @@ private:
     QAction *bLockRelZero;
 	RS_SnapMode snapMode;
 
+    Ui::QG_SnapToolBar* ui;
 };
 
 #endif // QG_SNAPTOOLBAR_H
