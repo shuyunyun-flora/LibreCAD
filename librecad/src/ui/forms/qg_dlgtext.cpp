@@ -119,6 +119,35 @@ void QG_DlgText::init() {
     QWidget::setTabOrder(bCopy, bPaste);
     QWidget::setTabOrder(bPaste, teText); // Paste loops back to Text
     QWidget::setTabOrder(teText, cbLayer); // Text widget -> Layer widget
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QG_DlgText::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QG_DlgText::reject));
+    QObject::connect(cbUniPage, &QComboBox::activated, this, &QG_DlgText::updateUniCharComboBox);
+    QObject::connect(bUnicode, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::insertChar));
+    QObject::connect(cbUniPage, &QComboBox::activated, this, &QG_DlgText::updateUniCharButton);
+    QObject::connect(cbUniChar, &QComboBox::activated, this, &QG_DlgText::updateUniCharButton);
+    QObject::connect(cbSymbol, &QComboBox::activated, this, &QG_DlgText::insertSymbol);
+    QObject::connect(bCopy, &QToolButton::clicked, teText, qOverload<>(&QLineEdit::copy));
+    QObject::connect(bClear, &QToolButton::clicked, teText, qOverload<>(&QLineEdit::clear));
+    QObject::connect(bCut, &QToolButton::clicked, teText, qOverload<>(&QLineEdit::cut));
+    QObject::connect(bPaste, &QToolButton::clicked, teText, qOverload<>(&QLineEdit::paste));
+    QObject::connect(bSave, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::saveText));
+    QObject::connect(bLoad, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::loadText));
+    QObject::connect(bMC, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentMC));
+    QObject::connect(bMR, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentMR));
+    QObject::connect(bBR, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentBR));
+    QObject::connect(bBL, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentBL));
+    QObject::connect(bTL, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentTL));
+    QObject::connect(bBC, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentBC));
+    QObject::connect(bTC, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentTC));
+    QObject::connect(bLC, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentLC));
+    QObject::connect(bLL, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentLL));
+    QObject::connect(bLR, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentLR));
+    QObject::connect(bML, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentML));
+    QObject::connect(bTR, &QToolButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentTR));
+    QObject::connect(rbFit, &QRadioButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentFit));
+    QObject::connect(rbAligned, &QRadioButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentAlign));
+    QObject::connect(rbMiddle, &QRadioButton::clicked, this, qOverload<>(&QG_DlgText::setAlignmentMiddle));
 }
 
 

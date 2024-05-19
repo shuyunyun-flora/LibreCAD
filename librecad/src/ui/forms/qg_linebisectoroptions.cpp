@@ -40,6 +40,9 @@ QG_LineBisectorOptions::QG_LineBisectorOptions(QWidget* parent, Qt::WindowFlags 
 	, ui(new Ui::Ui_LineBisectorOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leLength, &QLineEdit::textChanged, this, &QG_LineBisectorOptions::updateLength);
+    QObject::connect(ui->sbNumber, &QSpinBox::valueChanged, this, &QG_LineBisectorOptions::updateNumber);
 }
 
 /*

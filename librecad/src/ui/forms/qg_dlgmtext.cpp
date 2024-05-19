@@ -113,6 +113,31 @@ void QG_DlgMText::init() {
     teText->QFrame::setMidLineWidth(0);
     teText->QFrame::setFrameStyle(QFrame::Box|QFrame::Plain);
     teText->installEventFilter(this);
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(bTL, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentTL));
+    QObject::connect(bTC, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentTC));
+    QObject::connect(bTR, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentTR));
+    QObject::connect(bML, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentML));
+    QObject::connect(bMC, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentMC));
+    QObject::connect(bMR, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentMR));
+    QObject::connect(bBL, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentBL));
+    QObject::connect(bBC, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentBC));
+    QObject::connect(bBR, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::setAlignmentBR));
+    QObject::connect(cbDefault, &QCheckBox::toggled, leLineSpacingFactor, &QLineEdit::setDisabled);
+    QObject::connect(cbDefault, &QCheckBox::toggled, this, &QG_DlgMText::defaultChanged);
+    QObject::connect(bClear, &QToolButton::clicked, teText, qOverload<>(&QTextEdit::clear));
+    QObject::connect(bCut, &QToolButton::clicked, teText, qOverload<>(&QTextEdit::cut));
+    QObject::connect(bCopy, &QToolButton::clicked, teText, qOverload<>(&QTextEdit::copy));
+    QObject::connect(bPaste, &QToolButton::clicked, teText, qOverload<>(&QTextEdit::paste));
+    QObject::connect(bLoad, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::loadText));
+    QObject::connect(bSave, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::saveText));
+    QObject::connect(cbUniPage, &QComboBox::activated, this, &QG_DlgMText::updateUniCharComboBox);
+    QObject::connect(bUnicode, &QToolButton::clicked, this, qOverload<>(&QG_DlgMText::insertChar));
+    QObject::connect(cbUniPage, &QComboBox::activated, this, &QG_DlgMText::updateUniCharButton);
+    QObject::connect(cbUniChar, &QComboBox::activated, this, &QG_DlgMText::updateUniCharButton);
+    QObject::connect(cbSymbol, &QComboBox::activated, this, &QG_DlgMText::insertSymbol);
 }
 
 

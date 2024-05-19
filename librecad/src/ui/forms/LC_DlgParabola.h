@@ -54,6 +54,11 @@ private:
     LC_DlgParabola(LC_DlgParabola &&) = delete;
     LC_DlgParabola& operator = (LC_DlgParabola &&) = delete;
 
+private:
+    void init_connections();
+
+private:
+
     LC_Parabola* parabola = nullptr;
     std::unique_ptr<Ui::DlgParabola> ui;
 };

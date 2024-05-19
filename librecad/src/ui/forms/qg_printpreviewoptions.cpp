@@ -126,6 +126,14 @@ void QG_PrintPreviewOptions::init() {
     RS_SETTINGS->endGroup();
     //make sure user scale is accepted
     ui->cbScale->setInsertPolicy(QComboBox::InsertAtTop);
+
+    QObject::connect(ui->bCenter, &QToolButton::clicked, this, qOverload<>(&QG_PrintPreviewOptions::center));
+    QObject::connect(ui->bScaleLineWidth, &QToolButton::toggled, this, &QG_PrintPreviewOptions::setLineWidthScaling);
+    QObject::connect(ui->bBlackWhite, &QToolButton::toggled, this, &QG_PrintPreviewOptions::setBlackWhite);
+    //QObject::connect(ui->cbScale, &QComboBox::currentIndexChanged, this, &QG_PrintPreviewOptions::scale);
+    QObject::connect(ui->bFit, &QToolButton::clicked, this, qOverload<>(&QG_PrintPreviewOptions::fit));
+    QObject::connect(ui->cFixed, &QCheckBox::clicked, this, &QG_PrintPreviewOptions::setScaleFixed);
+    QObject::connect(ui->bCalcPagesNum, &QToolButton::clicked, this, qOverload<>(&QG_PrintPreviewOptions::calcPagesNum));
 }
 
 void QG_PrintPreviewOptions::saveSettings() {

@@ -40,6 +40,10 @@ QG_SplineOptions::QG_SplineOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_SplineOptions{})
 {
 	ui->setupUi(this);
+
+ /*   QObject::connect(ui->bUndo, &QToolButton::clicked, this, qOverload<>(&QG_SplineOptions::undo));
+    QObject::connect(ui->cbDegree, &QComboBox::activated, this, &QG_SplineOptions::setDegree);
+    QObject::connect(ui->cbClosed, &QCheckBox::toggled, this, &QG_SplineOptions::setClosed);*/
 }
 
 /*

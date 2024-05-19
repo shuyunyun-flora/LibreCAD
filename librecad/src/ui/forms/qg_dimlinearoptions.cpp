@@ -41,6 +41,10 @@ QG_DimLinearOptions::QG_DimLinearOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_DimLinearOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, &QG_DimLinearOptions::updateAngle);
+    QObject::connect(ui->bHor, &QToolButton::clicked, this, qOverload<>(&QG_DimLinearOptions::setHor));
+    QObject::connect(ui->bVer, &QToolButton::clicked, this, qOverload<>(&QG_DimLinearOptions::setVer));
 }
 
 /*

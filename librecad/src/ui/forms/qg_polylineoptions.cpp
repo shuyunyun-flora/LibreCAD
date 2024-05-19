@@ -41,6 +41,14 @@ QG_PolylineOptions::QG_PolylineOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_PolylineOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->bClose, &QToolButton::clicked, this, qOverload<>(&QG_PolylineOptions::close));
+    QObject::connect(ui->bUndo, &QToolButton::clicked, this, qOverload<>(&QG_PolylineOptions::undo));
+    QObject::connect(ui->leRadius, &QLineEdit::textChanged, this, &QG_PolylineOptions::updateRadius);
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, &QG_PolylineOptions::updateAngle);
+    QObject::connect(ui->cbMode, &QComboBox::activated, this, &QG_PolylineOptions::updateMode);
+    QObject::connect(ui->rbNeg, &QRadioButton::toggled, this, &QG_PolylineOptions::updateDirection);
+    QObject::connect(ui->rbPos, &QRadioButton::toggled, this, &QG_PolylineOptions::updateDirection);
 }
 
 /*

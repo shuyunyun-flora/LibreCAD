@@ -40,6 +40,9 @@ QG_DlgOptionsMakerCam::QG_DlgOptionsMakerCam(QWidget* parent, bool modal, Qt::Wi
     gbImages->setToolTip(tr("Whether to export points"));
 
     loadSettings();
+
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(buttonBox, SIGNAL(accepted()), this, SLOT(validate()));
 }
 
 void QG_DlgOptionsMakerCam::languageChange()

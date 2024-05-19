@@ -39,6 +39,9 @@ QG_LineParallelThroughOptions::QG_LineParallelThroughOptions(QWidget* parent, Qt
 	, ui(new Ui::Ui_LineParallelThroughOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->sbNumber, &QSpinBox::valueChanged, this, &QG_LineParallelThroughOptions::updateNumber);
+
 }
 
 /*

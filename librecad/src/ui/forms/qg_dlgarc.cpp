@@ -42,6 +42,8 @@ QG_DlgArc::QG_DlgArc(QWidget* parent, bool modal, Qt::WindowFlags fl)
     setModal(modal);
     setupUi(this);
 
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
 }
 
 /*

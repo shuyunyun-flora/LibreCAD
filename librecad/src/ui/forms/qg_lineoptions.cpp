@@ -38,6 +38,10 @@ QG_LineOptions::QG_LineOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_LineOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->bClose, &QToolButton::clicked, this, qOverload<>(&QG_LineOptions::close));
+    QObject::connect(ui->bUndo, &QToolButton::clicked, this, qOverload<>(&QG_LineOptions::undo));
+    QObject::connect(ui->bRedo, &QToolButton::clicked, this, qOverload<>(&QG_LineOptions::redo));
 }
 
 /*

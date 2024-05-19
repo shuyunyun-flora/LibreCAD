@@ -83,6 +83,9 @@ void QG_DlgMirror::init() {
     }
     cbCurrentAttributes->setChecked(useCurrentAttributes);
     cbCurrentLayer->setChecked(useCurrentLayer);
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
 }
 
 void QG_DlgMirror::destroy() {

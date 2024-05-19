@@ -91,6 +91,14 @@ void QG_ImageOptionsDialog::init() {
     RS_SETTINGS->endGroup();
 
     updateEnabled = true;
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QG_ImageOptionsDialog::ok));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QG_ImageOptionsDialog::reject));
+    QObject::connect(leWidth, &QLineEdit::textChanged, this, qOverload<>(&QG_ImageOptionsDialog::sizeChanged));
+    QObject::connect(leHeight, &QLineEdit::textChanged, this, qOverload<>(&QG_ImageOptionsDialog::sizeChanged));
+    QObject::connect(cbResolution, &QComboBox::editTextChanged, this, qOverload<>(&QG_ImageOptionsDialog::resolutionChanged));
+    QObject::connect(cbSameBorders, &QCheckBox::stateChanged, this, qOverload<>(&QG_ImageOptionsDialog::sameBordersChanged));
+    QObject::connect(leLeftRight, &QLineEdit::textChanged, this, qOverload<>(&QG_ImageOptionsDialog::borderChanged));
 }
 
 void QG_ImageOptionsDialog::setGraphicSize(const RS_Vector& s) {

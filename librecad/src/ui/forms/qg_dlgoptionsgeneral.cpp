@@ -60,6 +60,12 @@ QG_DlgOptionsGeneral::QG_DlgOptionsGeneral(QWidget* parent, bool modal, Qt::Wind
     connect(cbAutoBackup, &QCheckBox::stateChanged,
             this, &QG_DlgOptionsGeneral::onAutoBackupChanged);
 
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QG_DlgOptionsGeneral::ok));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(cbLanguageCmd, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsGeneral::setRestartNeeded));
+    QObject::connect(cbLanguage, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsGeneral::setRestartNeeded));
+    QObject::connect(btPathLibrary, &QToolButton::clicked, this, qOverload<>(&QG_DlgOptionsGeneral::setLibraryPath));
+    QObject::connect(btTemplate, &QToolButton::clicked, this, qOverload<>(&QG_DlgOptionsGeneral::setTemplateFile));
 }
 
 /*

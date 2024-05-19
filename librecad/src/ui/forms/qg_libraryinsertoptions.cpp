@@ -41,6 +41,10 @@ QG_LibraryInsertOptions::QG_LibraryInsertOptions(QWidget* parent, Qt::WindowFlag
 	, ui(new Ui::Ui_LibraryInsertOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, qOverload<>(&QG_LibraryInsertOptions::updateData));
+    QObject::connect(ui->leFactor, &QLineEdit::textChanged, this, qOverload<>(&QG_LibraryInsertOptions::updateData));
+
 }
 
 /*

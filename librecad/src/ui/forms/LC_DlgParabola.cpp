@@ -36,6 +36,14 @@ LC_DlgParabola::LC_DlgParabola(QWidget* parent, bool modal, Qt::WindowFlags fl)
 {
 	setModal(modal);
 	ui->setupUi(this);
+
+    this->init_connections();
+}
+
+void LC_DlgParabola::init_connections()
+{
+    QObject::connect(ui->buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(ui->buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
 }
 
 LC_DlgParabola::~LC_DlgParabola() = default;

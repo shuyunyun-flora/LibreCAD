@@ -39,6 +39,9 @@ QG_LinePolygonOptions::QG_LinePolygonOptions(QWidget* parent, Qt::WindowFlags fl
 	, ui(new Ui::Ui_LinePolygonOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->sbNumber, &QSpinBox::valueChanged, this, &QG_LinePolygonOptions::updateNumber);
+
 }
 
 /*

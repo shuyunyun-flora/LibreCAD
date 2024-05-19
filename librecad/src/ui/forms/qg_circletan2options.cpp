@@ -37,6 +37,8 @@ QG_CircleTan2Options::QG_CircleTan2Options(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_CircleTan2Options{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leRadius, &QLineEdit::textChanged, this, &QG_CircleTan2Options::updateRadius);
 }
 
 /*

@@ -40,6 +40,10 @@ QG_LineRelAngleOptions::QG_LineRelAngleOptions(QWidget* parent, Qt::WindowFlags 
 	, ui(new Ui::Ui_LineRelAngleOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, &QG_LineRelAngleOptions::updateAngle);
+    QObject::connect(ui->leLength, &QLineEdit::textChanged, this, &QG_LineRelAngleOptions::updateLength);
+
 }
 
 /*

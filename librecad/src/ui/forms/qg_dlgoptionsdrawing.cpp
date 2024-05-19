@@ -142,6 +142,26 @@ void QG_DlgOptionsDrawing::init() {
     gvPaperPreview->setBackgroundBrush(this->palette().color(QPalette::Window));
 
     cbDimTxSty->init();
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QG_DlgOptionsDrawing::validate));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(cbLengthFormat, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updateLengthPrecision));
+    QObject::connect(cbDimLUnit, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updateDimLengthPrecision));
+    QObject::connect(cbAngleFormat, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updateAnglePrecision));
+    QObject::connect(cbDimAUnit, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updateDimAnglePrecision));
+    QObject::connect(cbUnit, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePreview));
+    QObject::connect(cbAngleFormat, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePreview));
+    QObject::connect(cbLengthFormat, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePreview));
+    QObject::connect(cbAnglePrecision, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePreview));
+    QObject::connect(cbLengthPrecision, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePreview));
+    QObject::connect(cbPaperFormat, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperSize));
+    QObject::connect(cbUnit, &QComboBox::activated, this, qOverload<>(&QG_DlgOptionsDrawing::updatePreview));
+    QObject::connect(leMarginRight, &QLineEdit::textChanged, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperPreview));
+    QObject::connect(leMarginLeft, &QLineEdit::textChanged, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperPreview));
+    QObject::connect(leMarginBottom, &QLineEdit::textChanged, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperPreview));
+    QObject::connect(leMarginTop, &QLineEdit::textChanged, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperPreview));
+    QObject::connect(lePaperWidth, &QLineEdit::textChanged, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperPreview));
+    QObject::connect(lePaperHeight, &QLineEdit::textChanged, this, qOverload<>(&QG_DlgOptionsDrawing::updatePaperPreview));
 }
 
 

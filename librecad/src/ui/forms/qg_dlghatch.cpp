@@ -70,6 +70,18 @@ void QG_DlgHatch::init() {
 
     cbPattern->init();
 
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(cbSolid, SIGNAL(toggled(bool)), cbPattern, SLOT(setDisabled(bool)));
+    QObject::connect(cbSolid, &QCheckBox::toggled, leScale, &QLineEdit::setDisabled);
+    QObject::connect(cbSolid, &QCheckBox::toggled, lScale, &QLabel::setDisabled);
+    QObject::connect(cbSolid, &QCheckBox::toggled, leAngle, &QLineEdit::setDisabled);
+    QObject::connect(cbSolid, &QCheckBox::toggled, lAngle, &QLabel::setDisabled);
+    QObject::connect(cbPattern, SIGNAL(patternChanged()), this, SLOT(updatePreview()));
+    QObject::connect(cbSolid, SIGNAL(toggled(bool)), this, SLOT(updatePreview()));
+    QObject::connect(leAngle, SIGNAL(textChanged(QString)), this, SLOT(updatePreview()));
+    QObject::connect(leScale, SIGNAL(textChanged(QString)), this, SLOT(updatePreview()));
+    QObject::connect(cbEnablePreview, SIGNAL(toggled(bool)), this, SLOT(updatePreview()));
 }
 
 void QG_DlgHatch::polish() {

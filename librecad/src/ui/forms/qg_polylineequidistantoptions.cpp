@@ -39,6 +39,10 @@ QG_PolylineEquidistantOptions::QG_PolylineEquidistantOptions(QWidget* parent, Qt
 	, ui{new Ui::PolylineEquidistantOptions{}}
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leDist, &QLineEdit::editingFinished, this, qOverload<>(&QG_PolylineEquidistantOptions::updateDist));
+    QObject::connect(ui->leNumber, &QLineEdit::editingFinished, this, qOverload<>(&QG_PolylineEquidistantOptions::updateNumber));
+
 }
 
 /*

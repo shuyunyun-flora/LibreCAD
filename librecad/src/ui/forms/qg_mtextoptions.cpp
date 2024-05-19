@@ -39,6 +39,10 @@ QG_MTextOptions::QG_MTextOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_MTextOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->teText, &QTextEdit::textChanged, this, qOverload<>(&QG_MTextOptions::updateText));
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, qOverload<>(&QG_MTextOptions::updateAngle));
+
 }
 
 /*

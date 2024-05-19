@@ -1100,6 +1100,7 @@ void QC_ApplicationWindow::slotWindowActivated(QMdiSubWindow* w, bool forced)
             emit printPreviewChanged(view->isPrintPreview());
         }
 
+        snapToolBar = nullptr;
         if(snapToolBar){
             actionHandler->slotSetSnaps(snapToolBar->getSnaps());
         }else {

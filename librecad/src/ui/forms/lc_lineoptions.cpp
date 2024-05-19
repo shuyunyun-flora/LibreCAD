@@ -22,6 +22,11 @@ LC_LineOptions::LC_LineOptions(QWidget* parent, Qt::WindowFlags fl)
     connect(ui->rbAngle, &QRadioButton::toggled, this, &LC_LineOptions::onAngleClicked);
     connect(ui->cbRelAngle, &QCheckBox::clicked, this, &LC_LineOptions::onAngleRelativeClicked);
     connect(ui->leAngle, &QLineEdit::editingFinished, this, &LC_LineOptions::onSetAngle);
+
+    QObject::connect(ui->bClose, &QToolButton::clicked, this, qOverload<>(&LC_LineOptions::closeLine));
+    QObject::connect(ui->bUndo, &QToolButton::clicked, this, qOverload<>(&LC_LineOptions::undo));
+    QObject::connect(ui->bRedo, &QToolButton::clicked, this, qOverload<>(&LC_LineOptions::redo));
+    QObject::connect(ui->bPolyline, &QToolButton::clicked, this, qOverload<>(&LC_LineOptions::polyline));
 }
 
 /*

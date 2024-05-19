@@ -44,6 +44,14 @@ QG_DlgImage::QG_DlgImage(QWidget* parent, bool modal, Qt::WindowFlags fl)
 {
     setModal(modal);
     setupUi(this);
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(leWidth, SIGNAL(editingFinished()), this, SLOT(changeWidth()));
+    QObject::connect(leHeight, SIGNAL(editingFinished()), this, SLOT(changeHeight()));
+    QObject::connect(leScale, SIGNAL(editingFinished()), this, SLOT(changeScale()));
+    QObject::connect(leDPI, SIGNAL(editingFinished()), this, SLOT(changeDPI()));
+    QObject::connect(pbFile, &QPushButton::clicked, this, qOverload<>(&QG_DlgImage::setImageFile));
 }
 
 /*

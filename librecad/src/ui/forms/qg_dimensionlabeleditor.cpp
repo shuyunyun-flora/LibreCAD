@@ -38,6 +38,7 @@ QG_DimensionLabelEditor::QG_DimensionLabelEditor(QWidget* parent, Qt::WindowFlag
     : QWidget(parent, fl)
 {
     setupUi(this);
+    //QObject::connect(cbSymbol, &QComboBox::activated, this, &QG_DimensionLabelEditor::insertSign);
 
 }
 

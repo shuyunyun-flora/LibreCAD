@@ -41,6 +41,13 @@ QG_InsertOptions::QG_InsertOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_InsertOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, qOverload<>(&QG_InsertOptions::updateData));
+    QObject::connect(ui->leFactor, &QLineEdit::textChanged, this, qOverload<>(&QG_InsertOptions::updateData));
+    QObject::connect(ui->sbColumns, &QSpinBox::valueChanged, this, qOverload<>(&QG_InsertOptions::updateData));
+    QObject::connect(ui->sbRows, &QSpinBox::valueChanged, this, qOverload<>(&QG_InsertOptions::updateData));
+    QObject::connect(ui->leColumnSpacing, &QLineEdit::textChanged, this, qOverload<>(&QG_InsertOptions::updateData));
+    QObject::connect(ui->leRowSpacing, &QLineEdit::textChanged, this, qOverload<>(&QG_InsertOptions::updateData));
 }
 
 /*

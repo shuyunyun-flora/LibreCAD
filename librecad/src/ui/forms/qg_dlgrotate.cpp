@@ -92,6 +92,12 @@ void QG_DlgRotate::init() {
     leAngle->setText(angle);
     cbCurrentAttributes->setChecked(useCurrentAttributes);
     cbCurrentLayer->setChecked(useCurrentLayer);
+
+    QObject::connect(rbMove, &QRadioButton::toggled, leNumber, &QLineEdit::setDisabled);
+    QObject::connect(rbCopy, &QRadioButton::toggled, leNumber, &QLineEdit::setDisabled);
+    QObject::connect(rbMultiCopy, &QRadioButton::toggled, leNumber, &QLineEdit::setEnabled);
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
 }
 
 void QG_DlgRotate::destroy() {

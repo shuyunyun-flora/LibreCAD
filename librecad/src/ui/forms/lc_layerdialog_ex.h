@@ -71,6 +71,7 @@ private:
     LC_LayerTreeModel* layerTreeModel;
     LC_LayerTreeItem *editedTreeItem {nullptr};
     RS_LayerList* layerList;
+    std::unique_ptr<Ui::LC_LayerDialogEx> ui;
     bool checkForDuplicatedNames(const QStringList &newLayerNamesList);
 };
 

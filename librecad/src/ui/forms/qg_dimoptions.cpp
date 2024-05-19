@@ -39,6 +39,12 @@ QG_DimOptions::QG_DimOptions(QWidget* parent, Qt::WindowFlags fl)
     , ui(std::make_unique<Ui::Ui_DimOptions>())
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leLabel, &QLineEdit::textChanged, this, qOverload<>(&QG_DimOptions::updateLabel));
+    QObject::connect(ui->bDiameter, &QToolButton::toggled, this, qOverload<>(&QG_DimOptions::updateLabel));
+    QObject::connect(ui->leTol1, &QLineEdit::textChanged, this, qOverload<>(&QG_DimOptions::updateLabel));
+    QObject::connect(ui->leTol2, &QLineEdit::textChanged, this, qOverload<>(&QG_DimOptions::updateLabel));
+    //QObject::connect(ui->cbSymbol, &QComboBox::activated, this, &QG_DimOptions::insertSign);
 }
 
 /*

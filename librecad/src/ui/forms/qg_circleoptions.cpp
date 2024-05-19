@@ -41,6 +41,9 @@ QG_CircleOptions::QG_CircleOptions(QWidget* parent, Qt::WindowFlags fl)
     , ui(std::make_unique<Ui::Ui_CircleOptions>())
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leRadius, &QLineEdit::textChanged, this, &QG_CircleOptions::updateRadius);
+
 }
 
 /*

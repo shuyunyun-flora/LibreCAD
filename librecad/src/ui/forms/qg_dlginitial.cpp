@@ -76,6 +76,9 @@ void QG_DlgInitial::init() {
         cbUnit->setCurrentIndex( cbUnit->findText("Millimeter") );
         cbLanguage->setCurrentIndex( cbLanguage->findText(defaultLanguage) );
         cbLanguageCmd->setCurrentIndex( cbLanguageCmd->findText(defaultLanguage) );
+
+        QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QG_DlgInitial::ok));
+
 }
 
 void QG_DlgInitial::setText(const QString& t) {

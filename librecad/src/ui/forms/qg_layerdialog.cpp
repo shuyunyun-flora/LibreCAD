@@ -108,6 +108,10 @@ void QG_LayerDialog::init(){
 	layerList = NULL;
 	layerName = "";
 	editLayer = false;
+
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QG_LayerDialog::validate));
+
 }
 
 void QG_LayerDialog::setEditLayer( bool el ){

@@ -180,6 +180,9 @@ void LC_LayerDialogEx::init(){
     wPen->setVisible(false);
     cbConstructionLayer->setVisible(false);
     setWindowTitle(tr("Rename Layer"));
+
+    QObject::connect(ui->buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(ui->buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&LC_LayerDialogEx::validate));
 }
 
 void LC_LayerDialogEx::layerTypeChanged()

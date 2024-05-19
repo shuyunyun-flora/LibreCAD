@@ -40,6 +40,10 @@ QG_RoundOptions::QG_RoundOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_RoundOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leRadius, &QLineEdit::textChanged, this, qOverload<>(&QG_RoundOptions::updateData));
+    QObject::connect(ui->cbTrim, &QCheckBox::toggled, this, qOverload<>(&QG_RoundOptions::updateData));
+
 }
 
 /*

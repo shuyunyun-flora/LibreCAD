@@ -15,6 +15,9 @@ LC_DlgSplinePoints::LC_DlgSplinePoints(QWidget* parent, bool modal, Qt::WindowFl
 	connect(ui->rbSplinePoints, SIGNAL(toggled(bool)),
 			this, SLOT(updatePoints())
 			);
+
+    QObject::connect(ui->buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(ui->buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
 }
 
 LC_DlgSplinePoints::~LC_DlgSplinePoints() = default;

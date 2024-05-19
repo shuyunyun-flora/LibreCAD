@@ -40,6 +40,10 @@ QG_LineParallelOptions::QG_LineParallelOptions(QWidget* parent, Qt::WindowFlags 
 	, ui(new Ui::Ui_LineParallelOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leDist, &QLineEdit::textChanged, this, &QG_LineParallelOptions::updateDist);
+    QObject::connect(ui->sbNumber, &QSpinBox::valueChanged, this, &QG_LineParallelOptions::updateNumber);
+
 }
 
 /*

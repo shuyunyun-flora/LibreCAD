@@ -40,6 +40,10 @@ QG_BevelOptions::QG_BevelOptions(QWidget* parent, Qt::WindowFlags fl)
     , ui(std::make_unique<Ui::Ui_BevelOptions>())
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leLength1, &QLineEdit::textChanged, this, qOverload<>(&QG_BevelOptions::updateData));
+    QObject::connect(ui->cbTrim, &QCheckBox::toggled, this, qOverload<>(&QG_BevelOptions::updateData));
+    QObject::connect(ui->leLength2, &QLineEdit::textChanged, this, qOverload<>(&QG_BevelOptions::updateData));
 }
 
 /*

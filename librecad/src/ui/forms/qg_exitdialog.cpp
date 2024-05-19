@@ -81,6 +81,9 @@ void QG_ExitDialog::init()
 //    bSaveAs->setIcon(QIcon(":/actions/filesaveas.png"));
      // RVT_PORT makeLetterAccell( bSaveAs );
     // RVT_PORT  makeLetterAccell( bCancel );
+
+    QObject::connect(ui->buttonBox, SIGNAL(clicked(QAbstractButton*)), this, SLOT(clicked(QAbstractButton*)));
+
 }
 
 void QG_ExitDialog::clicked(QAbstractButton * button){

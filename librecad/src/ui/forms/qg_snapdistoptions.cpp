@@ -38,6 +38,9 @@ QG_SnapDistOptions::QG_SnapDistOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_SnapDistOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leDist, &QLineEdit::textChanged, this, &QG_SnapDistOptions::updateDist);
+
 }
 
 /*

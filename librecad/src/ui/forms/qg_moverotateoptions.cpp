@@ -40,6 +40,9 @@ QG_MoveRotateOptions::QG_MoveRotateOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_MoveRotateOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, &QG_MoveRotateOptions::updateAngle);
+
 }
 
 void QG_MoveRotateOptions::saveSettings() {

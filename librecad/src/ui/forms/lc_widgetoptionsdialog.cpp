@@ -32,6 +32,9 @@ LC_WidgetOptionsDialog::LC_WidgetOptionsDialog(QWidget* parent)
 
     connect(stylesheet_button, SIGNAL(released()),
             this, SLOT(chooseStyleSheet()));
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, this, qOverload<>(&QDialog::accept));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
 }
 
 void LC_WidgetOptionsDialog::chooseStyleSheet()

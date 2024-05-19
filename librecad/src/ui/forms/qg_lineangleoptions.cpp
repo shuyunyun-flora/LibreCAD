@@ -41,6 +41,11 @@ QG_LineAngleOptions::QG_LineAngleOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_LineAngleOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, SIGNAL(textChanged(QString)), this, SLOT(updateAngle(QString)));
+    QObject::connect(ui->leLength, SIGNAL(textChanged(QString)), this, SLOT(updateLength(QString)));
+    QObject::connect(ui->cbSnapPoint, SIGNAL(activated(int)), this, SLOT(updateSnapPoint(int)));
+
 }
 
 /*

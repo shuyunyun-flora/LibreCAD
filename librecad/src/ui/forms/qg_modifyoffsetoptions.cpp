@@ -42,6 +42,9 @@ QG_ModifyOffsetOptions::QG_ModifyOffsetOptions(QWidget* parent, Qt::WindowFlags 
 	, ui(new Ui::Ui_ModifyOffsetOptions{})
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leDist, &QLineEdit::textChanged, this, &QG_ModifyOffsetOptions::updateDist);
+
 }
 
 /*

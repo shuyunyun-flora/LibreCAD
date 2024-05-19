@@ -142,6 +142,21 @@ QG_SnapToolBar::QG_SnapToolBar(QWidget* parent, QG_ActionHandler* ah, LC_ActionG
  //   RS_SETTINGS->beginGroup("/Snap");
  //   setSnaps( RS_SnapMode::fromInt( RS_SETTINGS->readNumEntry( "/SnapMode", 0)));
  //   RS_SETTINGS->endGroup();
+
+
+//QObject::connect(bGrid, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapGrid));
+//QObject::connect(bEndpoint, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapEndpoint));
+//QObject::connect(bOnEntity, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapOnEntity));
+//QObject::connect(bCenter, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapCenter));
+//QObject::connect(bMiddle, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapMiddle));
+//QObject::connect(bDist, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapDist));
+//QObject::connect(bIntersection, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapIntersection));
+//QObject::connect(bRelZero, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::setRelativeZero));
+//QObject::connect(bLockRelZero, &QToolButton::toggled, QG_SnapToolBar, &QWidget::lockRelativeZero);
+//QObject::connect(bResHorizontal, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::restrictHorizontal));
+//QObject::connect(bResVertical, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::restrictVertical));
+//QObject::connect(bIntersectionManual, &QToolButton::clicked, QG_SnapToolBar, qOverload<>(&QWidget::snapIntersectionManual));
+
 }
 
 void QG_SnapToolBar::slotUnsetSnapMiddleManual()

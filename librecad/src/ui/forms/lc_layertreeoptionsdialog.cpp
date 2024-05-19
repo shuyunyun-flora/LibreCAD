@@ -38,6 +38,16 @@ LC_LayerTreeOptionsDialog::LC_LayerTreeOptionsDialog(QWidget *parent, LC_LayerTr
 }
 
 void LC_LayerTreeOptionsDialog::init(){
+    QObject::connect(buttonBox, SIGNAL(accepted()), this, SLOT(validate()));
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, this, qOverload<>(&QDialog::reject));
+    QObject::connect(pb_highlightedColor, SIGNAL(clicked()), this, SLOT(pb_highlightedColorClicked()));
+    QObject::connect(pb_gridColor, SIGNAL(clicked()), this, SLOT(pb_gridColorClicked()));
+    QObject::connect(pbSelectedItemsBgColor, SIGNAL(clicked()), this, SLOT(pbSelectedItemsBgColorClicked()));
+    QObject::connect(pbActiveLayerBgColor, SIGNAL(clicked()), this, SLOT(pbActiveLayerBgColorClicked()));
+    QObject::connect(pb_selectedItemColor, SIGNAL(clicked()), this, SLOT(pb_selectedItemColorClicked()));
+    QObject::connect(cbShowIdented, SIGNAL(stateChanged(int)), this, SLOT(showIndentedClicked()));
+
+
    leLayerLevelSeparator->setText(options->layerLevelSeparator);
    leDimSuffix->setText(options->dimensionalLayerNameSuffix);
    leInfoSuffix->setText(options->informationalLayerNameSuffix);

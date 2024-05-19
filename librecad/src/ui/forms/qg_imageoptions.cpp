@@ -41,6 +41,11 @@ QG_ImageOptions::QG_ImageOptions(QWidget* parent, Qt::WindowFlags fl)
 	, ui(new Ui::Ui_ImageOptions)
 {
 	ui->setupUi(this);
+
+    QObject::connect(ui->leAngle, &QLineEdit::textChanged, this, qOverload<>(&QG_ImageOptions::updateData));
+    QObject::connect(ui->leDPI, &QLineEdit::textChanged, this, qOverload<>(&QG_ImageOptions::updateDPI));
+    QObject::connect(ui->leFactor, SIGNAL(textChanged(QString)), this, SLOT(updateFactor()));
+
 }
 
 /*
