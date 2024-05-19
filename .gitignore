@@ -109,3 +109,14 @@ core.*
 /libraries/jwwlib/jwwlib.vcxproj.user
 /libraries/libdxfrw/dxfrw.vcxproj.user
 /libraries/muparser/muparser.vcxproj.user
+/plugins/align/align.vcxproj.user
+/plugins/asciifile/asciifile.vcxproj.user
+/librecad/src/LibreCAD.vcxproj.user
+/plugins/divide/divide.vcxproj.user
+/plugins/gear/gear.vcxproj.user
+/plugins/list/list.vcxproj.user
+/plugins/picfile/picfile.vcxproj.user
+/plugins/plotequation/plotequation.vcxproj.user
+/plugins/pointstocsv/pointstocsv.vcxproj.user
+/plugins/sameprop/sameprop.vcxproj.user
+/plugins/sample/sample.vcxproj.user
