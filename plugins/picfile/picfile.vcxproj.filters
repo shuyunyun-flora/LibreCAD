@@ -42,7 +42,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\picfile\picfile_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\picfile\picfiled_resource.rc" />
+    <ResourceCompile Include=".\picfile_resource.rc" />
+    <ResourceCompile Include=".\picfiled_resource.rc" />
   </ItemGroup>
 </Project>
