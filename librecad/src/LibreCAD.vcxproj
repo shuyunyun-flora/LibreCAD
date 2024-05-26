@@ -147,7 +147,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\..\..\..\SDK_MISC\boost_1_85_0;..\..\libraries\muparser\include;..\..\libraries\libdxfrw\src;..\..\libraries\jwwlib\src;cmd;lib\actions;lib\creation;lib\debug;lib\engine;lib\fileio;lib\filters;lib\generators;lib\gui;lib\information;lib\math;lib\modification;lib\printing;actions;main;main\console_dxf2pdf;test;plugins;ui;ui\forms;ui\generic;..\res;..\..\generated\librecad\moc;..\..\generated\librecad\ui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\..\..\..\SDK_MISC\boost_1_85_0;..\..\libraries\muparser\include;..\..\libraries\libdxfrw\src;..\..\libraries\jwwlib\src;cmd;lib\actions;lib\creation;lib\debug;lib\engine;lib\fileio;lib\filters;lib\generators;lib\gui;lib\information;lib\math;lib\modification;lib\printing;actions;main;main\console_dxf2pdf;test;plugins;ui;ui\forms;ui\generic;..\res;..\..\generated\librecad\moc;..\..\generated\librecad\ui;/include;$(SolutionDir)QGoodWindow\QGoodWindow;$(SolutionDir)QGoodWindow\QGoodCentralWidget;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>..\..\generated\librecad\obj\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -157,7 +157,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ObjectFileName>..\..\generated\librecad\obj\</ObjectFileName>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DWGSUPPORT;_USE_MATH_DEFINES;MUPARSER_STATIC;QC_APPDIR="LibreCAD";LC_VERSION="2.2.0-alpha";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DWGSUPPORT;_USE_MATH_DEFINES;MUPARSER_STATIC;QC_APPDIR="LibreCAD";LC_VERSION="2.2.0-alpha";QT_VERSION_QT6;QGOODWINDOW;QGOODCENTRALWIDGET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -2677,6 +2677,11 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\res\main\librecad.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\QGoodWindow\build-library\build-qgoodwindow-and-central-widget-static-lib.vcxproj">
+      <Project>{98184c87-5b5b-321a-a81d-e47a55e73acc}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
