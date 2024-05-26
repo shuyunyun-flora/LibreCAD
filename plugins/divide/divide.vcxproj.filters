@@ -48,7 +48,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\divide\divide_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\divide\divided_resource.rc" />
+    <ResourceCompile Include=".\divide_resource.rc" />
+    <ResourceCompile Include=".\divided_resource.rc" />
   </ItemGroup>
 </Project>

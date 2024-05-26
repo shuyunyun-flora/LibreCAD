@@ -42,7 +42,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\asciifile\asciifile_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\asciifile\asciifiled_resource.rc" />
+    <ResourceCompile Include=".\asciifile_resource.rc" />
+    <ResourceCompile Include=".\asciifiled_resource.rc" />
   </ItemGroup>
 </Project>

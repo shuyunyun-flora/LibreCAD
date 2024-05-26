@@ -48,7 +48,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\plotequation\plotequation_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\plotequation\plotequationd_resource.rc" />
+    <ResourceCompile Include=".\plotequation_resource.rc" />
+    <ResourceCompile Include=".\plotequationd_resource.rc" />
   </ItemGroup>
 </Project>

@@ -42,7 +42,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\align\align_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\align\alignd_resource.rc" />
+    <ResourceCompile Include=".\align_resource.rc" />
+    <ResourceCompile Include=".\alignd_resource.rc" />
   </ItemGroup>
 </Project>

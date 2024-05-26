@@ -42,7 +42,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\gear\gear_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\gear\geard_resource.rc" />
+    <ResourceCompile Include=".\gear_resource.rc" />
+    <ResourceCompile Include=".\geard_resource.rc" />
   </ItemGroup>
 </Project>

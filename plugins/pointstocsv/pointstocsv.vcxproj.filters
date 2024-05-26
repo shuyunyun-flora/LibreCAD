@@ -42,7 +42,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\pointstocsv\pointstocsv_resource.rc" />
-    <ResourceCompile Include="E:\GitHub\LibreCAD\plugins\pointstocsv\pointstocsvd_resource.rc" />
+    <ResourceCompile Include=".\pointstocsv_resource.rc" />
+    <ResourceCompile Include=".\pointstocsvd_resource.rc" />
   </ItemGroup>
 </Project>
